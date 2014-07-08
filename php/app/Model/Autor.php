@@ -8,7 +8,7 @@
  */
 
 class Autor extends AppModel{
-    public $useTable = 'Autores';
+    public $useTable = 'autores';
     public $validate = array(
         'nome' => array(
             'rule' => array('custom', '/[a-zA-Z|]*/'),
