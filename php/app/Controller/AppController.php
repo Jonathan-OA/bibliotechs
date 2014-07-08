@@ -5,8 +5,6 @@
  * This file is application-wide controller file. You can put all
  * application-wide controller-related methods here.
  *
- * PHP 5
- *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
@@ -20,6 +18,7 @@
  * @since         CakePHP(tm) v 0.2.9
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
+
 App::uses('Controller', 'Controller');
 
 /**
@@ -32,8 +31,26 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
-	/**
-	 * Add in the DebugKit toolbar
-	 */
-	public $components = array('DebugKit.Toolbar');
+    public $components = array(
+        'Session',
+        'Auth' => array(
+            'loginRedirect' => array('controller' => 'livros', 'action' => 'index'),
+            'logoutRedirect' => array('controller' => 'contas', 'action' => 'login'),
+            'loginAction' => array('controller' => 'contas', 'action' => 'login')
+        )
+    );
+
+    function beforeFilter() {
+        $this->_login();
+    }
+
+    function _login(){
+        Security::setHash('sha256');
+        $this->Auth->allow(array('controller' => 'contas', 'action' => 'login'));
+        if ($this->Auth->User()){
+            $this->layout = 'bibliotechs';
+        } else{
+            $this->layout = 'default';
+        }
+    }
 }

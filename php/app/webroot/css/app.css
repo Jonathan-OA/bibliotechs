@@ -1,0 +1,54 @@
+#content{
+	background-image: url("img/fundo.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow: auto;
+  	max-height: 90vh;
+    width: 100%;
+  padding: 10px 40px 10px 0px;
+
+}
+
+.topbar{
+	position: static;
+	background-color: #000000;
+	height: 80px;
+	color: white;
+	padding: 20px 2px;
+	font-size: 30px;
+	border-left-color: #262721;
+	border-bottom: 1px solid;
+	font-family: 'Limelight', cursive;
+}
+
+.topbar a{
+	padding: 10px 10px 10px 10px;
+}
+
+.side-nav ul{
+	margin: 0;
+}
+
+fieldset {
+	border: 1px  #000000 solid;
+}
+
+fieldset legend {
+	background-color: transparent;
+	color: #000000;
+}
+
+table {
+	width: 100%;
+}
+
+label {
+
+	color: #000000;
+	font-weight: bold;
+}
+
+.teste {
+	background: #000000;
+	color: white;
+}

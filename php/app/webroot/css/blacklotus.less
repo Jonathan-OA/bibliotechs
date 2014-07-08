@@ -1,0 +1,358 @@
+/*
+ * Defaults
+ */
+body {
+  font-family: Lato;
+  font-weight: 300;
+}
+input {
+  margin-bottom: 10px;
+}
+
+/*
+ * Topbar
+ */
+#topbar {
+  background: url("../img/topbar-bg.jpg") center;
+  height: 48px;
+  border-bottom: 1px solid #A7B5C2;
+  box-shadow: 0 -8px 20px -5px rgba(255, 255, 255, 0.29) inset,
+  0 10px 29px -3px rgba(255, 255, 255, 0.25) inset;
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+
+  > .row {
+    width: 100%;
+  }
+
+  // À esquerda, o título do sistema, com o nome da empresa e filial
+  .title {
+    h2 {
+      font-size: 23px;
+      color: white;
+      margin: 11px 21px;
+
+      small {
+        color: rgba(255, 255, 255, 0.87);
+        font-size: 12px;
+        padding-left: 15px;
+      }
+    }
+  }
+
+  // No centro, o título do módulo em operação
+  .module-title{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+
+    span {
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: white;
+      margin: 9px 0;
+      display: block;
+    }
+  }
+
+  // À direta, as notificações e Nav do Usuário
+  .user {
+    > .pull-right {
+      max-width: 295px;
+    }
+    .notification {
+      height: 36px;
+      margin-top: 6px;
+      border-radius: 2px;
+      overflow: hidden;
+      width: 93px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+      float: left;
+
+      .count {
+        background: rgb(16, 190, 197);
+        font-weight: 600;
+        color: white;
+        padding: 8px;
+        float: left;
+        height: 36px;
+      }
+      .avatar {
+        overflow: hidden;
+        height: 36px;
+        img {
+          width: 70px;
+          margin-top: -17px;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 18px;
+      color: white;
+      float: left;
+      max-width: 115px;
+      min-width: 70px;
+      margin: 7px 0 7px 10px;
+      overflow: hidden;
+
+      small {
+        color: rgba(255, 255, 255, 0.87);
+        font-size: 10px;
+        display: block;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+    }
+    .options {
+      float: left;
+      .dropdown > a {
+        font-size: 13px;
+        height: 46px;
+        padding: 15px;
+        transition: 0.2s;
+        display: block;
+        color: white;
+
+        &:hover {
+          text-shadow: 0 0 19px white;
+        }
+      }
+      .dropdown-menu {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+
+  // Mobile
+  .btn-mobile-menu a {
+    font-size: 21px;
+    height: 46px;
+    padding: 11px;
+    transition: .2s;
+    display: block;
+    color: #fff;
+
+    &:hover {
+      text-shadow: 0 0 19px white;
+    }
+  }
+}
+
+
+/*
+ * Sidebar
+ */
+.sidebar {
+  display: none;
+
+  /* For mobile */
+  @media (max-width: 768px) {
+    .nav-sidebar {
+      margin-top: 48px;
+      margin-bottom: -37px !important;
+      background: rgb(32, 32, 32);
+    }
+  }
+
+  /* For desktop */
+  @media (min-width: 768px) {
+    & {
+      position: fixed;
+      top: 48px;
+      bottom: 0;
+      left: 0;
+      z-index: 1000;
+      display: block;
+      padding: 20px;
+      overflow-x: hidden;
+      overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+      background-color: #f5f5f5;
+      border-right: 1px solid #eee;
+      box-shadow: 1px 0 16px -4px rgba(0, 0, 0, 0.34);
+      background: black;
+
+      padding-top: 0;
+    }
+  }
+
+  /* Sidebar navigation */
+  .nav-sidebar {
+    margin-right: -21px; /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: -20px;
+    & > li > a {
+      padding-right: 20px;
+      padding-left: 20px;
+      text-transform: uppercase;
+    }
+
+    // Em comum
+    & > li {
+      margin-bottom: 5px;
+
+      & > a {
+        color: #fff;
+        font-weight: 400;
+        transition: 0.1s;
+      }
+      &:hover, &.on {
+        & > a {
+          background: rgba(0, 183, 255, 0.17);
+          border-left: 4px solid #007AFF;
+        }
+      }
+      .sub-nav-sidebar {
+        overflow: hidden;
+        max-height: 0px;
+        transition: 0.5s;
+      }
+    }
+
+    // Não-ativado
+    & > li {
+      background: #070707;
+      & > a {
+        border-left: 4px solid #3D4855;
+      }
+      &.on {
+        background: #162B33;
+        .sub-nav-sidebar {
+          max-height: 200px;
+        }
+      }
+    }
+
+    // Ativado (Somente para desktop)
+    @media (min-width: 768px) {
+      & > li.active {
+        background: #162B33;
+        & > a {
+          border-left: 4px solid #007AFF;
+        }
+        .sub-nav-sidebar {
+          max-height:none;
+        }
+      }
+    }
+  }
+  .sub-nav-sidebar {
+    background: rgba(0, 0, 0, 0.6);
+    a {
+      position: relative;
+      display: block;
+      padding: 10px 15px;
+      color: rgba(255, 255, 255, 0.82);
+      transition: 0.1s;
+      &:hover {
+        background: rgba(0, 214, 255, 0.6);
+      }
+    }
+  }
+}
+
+
+/*
+ * Main content
+ */
+.main {
+  padding: 20px;
+
+  // For mobile
+  @media (max-width: 768px) {
+    & {
+      padding-top: 0;
+    }
+    .page-header {
+      margin: 37px -40px 30px -40px !important;
+    }
+  }
+
+  // For desktop
+  @media (min-width: 768px) {
+    & {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
+  .page-header {
+    margin: 20px -40px 30px -40px; z-index: -1; position: relative; // Send to back
+    background: white;
+    background: linear-gradient(to bottom, #ffffff 0%,#ededed 100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.21);
+    border-bottom: 1px solid rgb(216, 216, 216);
+    padding: 30px 30px 25px;
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      color: rgb(107, 107, 107);
+      font-size: 26px;
+      .glyphicon {
+        font-size: 22px;
+        margin-right: 10px;
+      }
+      small {
+        padding-left: 7px;
+      }
+    }
+
+  }
+}
+
+
+/*
+ * Pag Provider
+ */
+.pag-provider {
+  .input-group {
+    padding-bottom: 5px;
+  }
+  .saldo {
+    font-size: 22px;
+    font-weight: 400;
+    span {
+      font-size: 30px;
+      font-weight: 600;
+      color: rgb(100, 211, 91);
+    }
+  }
+}
+
+
+
+/*
+ * CakePHP
+ */
+.debugger {
+  margin: 20px 0;
+  background: black;
+  color: rgb(179, 179, 179);
+  font-family: Consolas;
+  padding: 21px;
+  border-radius: 6px;
+  box-shadow: 0 5px 13px -4px rgba(0, 0, 0, 0.56);
+  border: 1px solid rgb(240, 240, 240);
+}
+form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+  .input {
+    margin-bottom: 20px;
+  }
+}
+
+/*
+ * jQuery UI
+ */
+// Datapicker sempre na frente
+.ui-datepicker {
+  z-index: 4 !important;
+}
