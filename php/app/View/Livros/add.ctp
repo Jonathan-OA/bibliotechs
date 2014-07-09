@@ -8,7 +8,7 @@
         echo $this->Form->input('sinopse', array('label' => 'Sinopse', 'type' => 'text'));
         echo $this->Form->input('edicao', array('label' => 'Edição', 'type' => 'number'));
         echo $this->Form->input('ano', array('label' => 'Ano', 'type' => 'number'));
-        echo $this->Form->input('paginas', array('label' => 'Páginas', , 'type' => 'number'));
+        echo $this->Form->input('paginas', array('label' => 'Páginas' , 'type' => 'number'));
         echo $this->Form->input('autor_id', array('label' => 'Autor', 'options' => $autores));
         echo $this->Form->input('editora_id', array('label' => 'Editora', 'options' => $editoras));
         ?>
