@@ -26,10 +26,10 @@
                 else echo 'Feminino';
                 ?>
             </td>
-            <td><?php echo $this->time->format($usuario['Usuario']['data_nascimento'], '%d/%m/%Y');?></td>
+            <td><?php echo $this->Time->format($usuario['Usuario']['data_nascimento'], '%d/%m/%Y');?></td>
             <td><?php echo $usuario['Usuario']['logradouro'].', '.$usuario['Usuario']['numero'].', '.$usuario['Usuario']['bairro'].', '.$usuario['Usuario']['cidade'].', '.$usuario['Usuario']['estado'].', '.$usuario['Usuario']['pais']; ?></td>
             <td><?php echo $usuario['Conta']['email']; ?></td>
-            <td><?php echo $this->time->format($usuario['Conta']['created'], '%d/%m/%Y'); ?></td>
+            <td><?php echo $this->Time->format($usuario['Conta']['created'], '%d/%m/%Y'); ?></td>
             <td><?php echo $usuario['Conta']['pont_total']; ?></td>
             <td>
              <?php echo $this->Html->link($this->Html->image('edit.png',array('alt'=> 'Editar','title' => 'Editar', 'height' => '20px', 'width' => '20px')),array('action' => 'edit/'.$usuario['Conta']['username']), array('escape' => false));?>

@@ -3,12 +3,12 @@
     <fieldset>
         <legend><?php echo __('Adicionar Livro'); ?></legend>
         <?php
-        echo $this->Form->input('titulo', array('label' => 'Título'));
-        echo $this->Form->input('genero', array('label' => 'Genero'));
-        echo $this->Form->input('sinopse', array('label' => 'Sinopse'));
-        echo $this->Form->input('edicao', array('label' => 'Edição'));
-        echo $this->Form->input('ano', array('label' => 'Ano'));
-        echo $this->Form->input('paginas', array('label' => 'Páginas'));
+        echo $this->Form->input('titulo', array('label' => 'Título', 'type' => 'text'));
+        echo $this->Form->input('genero', array('label' => 'Genero', 'type' => 'text'));
+        echo $this->Form->input('sinopse', array('label' => 'Sinopse', 'type' => 'text'));
+        echo $this->Form->input('edicao', array('label' => 'Edição', 'type' => 'number'));
+        echo $this->Form->input('ano', array('label' => 'Ano', 'type' => 'number'));
+        echo $this->Form->input('paginas', array('label' => 'Páginas', , 'type' => 'number'));
         echo $this->Form->input('autor_id', array('label' => 'Autor', 'options' => $autores));
         echo $this->Form->input('editora_id', array('label' => 'Editora', 'options' => $editoras));
         ?>

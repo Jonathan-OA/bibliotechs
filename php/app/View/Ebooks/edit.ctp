@@ -8,5 +8,5 @@
         echo $this->Form->input('preco_asn', array('label' => 'Preço de assinatura'));
         ?>
     </div>
-<?php echo $this->Form->end(__('Adicionar'));?>
+<?php echo $this->Form->submit('Editar', array('class' => 'button round', 'title' => 'Editar')); ?>
 </div>

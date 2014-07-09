@@ -1,0 +1,53 @@
+--
+
+--1. Relacione os alunos que estão matriculados no curso 3.
+--SELECT * FROM tb_aluno where cursocod = 3
+
+--2. Relacione os nomes e endereços dos professores que lecionam disciplinas dos cursos que pertencem ao departamento 3.
+SELECT p.professornome, p.professorendereco 
+FROM tb_professor p, tb_curso c, tb_disciplina d, tb_cursodisciplina cd, tb_professordisciplina pd 
+where c.cursocod = cd.cursocod 
+and cd.disciplinacod = d.disciplinacod 
+and d.disciplinacod = pd.disciplinacod 
+and p.professorid = pd.professorcod 
+and c.departamentocod = 3
+group by p.professornome, p.professorendereco
+
+
+--3. Relacione os nomes dos alunos que estão matriculados na disciplina 1 e 7.
+SELECT a.alunonome
+FROM tb_aluno a, tb_alunodisciplina ad
+where a.alunoid = ad.alunoid
+and ad.disciplinacod in (1,7);
+
+-- 4. Qual a média salarial dos professores do departamento de Computação?
+select avg(professorsalario) as Média
+from tb_professor p, tb_departamento d 
+where d.departamentocod = p.departamentocod
+and d.departamentonome = 'Computação'; --Não funcionou direito
+
+-- 5. Relacione os os alunos que nasceram entre 16/02/1979 a 16/02/1984..
+select * from tb_aluno where alunodtnascimento between '1979-02-16' and '1984-02-16';
+
+-- 6. Relacione os professores que estão sem disciplinas no momento.
+select * from tb_professor p where p.professorid not in (select professorcod from tb_professordisciplina group by professorcod);
+
+-- 7. Relacione nome e departamento da(s) disciplina(s) que não possuem nenhum aluno matriculado.
+select d.disciplinanome, 
+from tb_disciplina d, tb_alunodisciplina ad 
+where d.disciplinacod = ad.disciplinacod 
+and ad.alunoid not in (select alunoid from tb_aluno group by alunoid);
+
+-- 8. Quantos alunos precisam fazer prova final para passar (Estão de prova final os alunos que tem nota entre 4.0 e 5.9)?
+select *--count(*) as Recuperação 
+from tb_aluno a, tb_alunodisciplina ad 
+where ad.alunoid = a.alunoid 
+and ad.alunodiscnota between 4.0 and 5.9
+
+
+
+
+
+
+
+

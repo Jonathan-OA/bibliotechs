@@ -9,5 +9,5 @@
         echo $this->Form->input('ItensPacote.5.ebook_id', array('label' => 'Livro', 'options' => $ebooks));
         ?>
     </div>
-<?php echo $this->Form->end(__('Adicionar'));?>
+<?php echo $this->Form->submit('Adicionar', array('class' => 'button round', 'title' => 'Adicionar')); ?>
 </div>

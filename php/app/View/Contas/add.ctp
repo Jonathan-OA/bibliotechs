@@ -31,12 +31,12 @@
             'minYear' => date('Y') - 90,
             'maxYear' => date('Y')
         ));
-        echo $this->Form->input('Usuario.logradouro');
-        echo $this->Form->input('Usuario.numero');
-        echo $this->Form->input('Usuario.bairro');
-        echo $this->Form->input('Usuario.cidade');
-        echo $this->Form->input('Usuario.estado');
-        echo $this->Form->input('Usuario.pais');
+        echo $this->Form->input('Usuario.logradouro', array('type' => 'text'));
+        echo $this->Form->input('Usuario.numero', array('type' => 'number'));
+        echo $this->Form->input('Usuario.bairro', array('type' => 'text'));
+        echo $this->Form->input('Usuario.cidade', array('type' => 'text'));
+        echo $this->Form->input('Usuario.estado', array('type' => 'text'));
+        echo $this->Form->input('Usuario.pais',  array('type' => 'text'));
         ?>
          <?php echo $this->Form->submit('Adicionar', array('class' => 'button round', 'title' => 'Adicionar')); ?>
     </fieldset>

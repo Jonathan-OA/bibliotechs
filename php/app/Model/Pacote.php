@@ -8,7 +8,7 @@
  */
 
 class Pacote extends AppModel{
-
+	public $name = 'Pacote';
     public $hasMany = array(
         'ItensPacote' => array(
             'className' => 'ItensPacote',
