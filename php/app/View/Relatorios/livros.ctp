@@ -1,6 +1,6 @@
 <?php
-	$this->js->set('myArray', $livros);
-    echo $this->js->writeBuffer(array('onDomReady' => false));
+	$this->Js->set('myArray', $livros);
+    echo $this->Js->writeBuffer(array('onDomReady' => false));
 ?>
 
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
