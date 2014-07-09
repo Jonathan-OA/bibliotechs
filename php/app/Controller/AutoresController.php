@@ -33,8 +33,6 @@ class AutoresController extends AppController{
                 $this->Session->setFlash(__('O autor não pode ser salvo, tente novamente.'));
                 $this->redirect(array('action' => 'index'));
             }
-        }else{
-            $this->redirect(array('action' => 'index'));
         }
     }
 

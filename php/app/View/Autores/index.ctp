@@ -6,10 +6,10 @@
 <table class="with-filter">
     <thead>
     <tr>
-        <th>Título</th>
-        <th>Gênero</th>
-        <th>Autor</th>
-        <th>Editora</th>
+        <th>Nome</th>
+        <th>Data Nascimento</th>
+        <th>Cidade</th>
+        <th>País</th>
         <th>Opções</th>
     </tr>
     </thead>
@@ -22,7 +22,7 @@
             <td><?php echo $autor['Autor']['pais']; ?></td>
             <td>
            		 <?php echo $this->Html->link($this->Html->image('edit.png',array('alt'=> 'Editar','title' => 'Editar', 'height' => '20px', 'width' => '20px')),array('action' => 'edit/'.$autor['Autor']['id']), array('escape' => false));?>
-                <?php echo $this->Form->postLink($this->Html->image('delete.png',array('alt'=> 'Excluir','title' => 'Excluir', 'height' => '20px', 'width' => '20px')),array('action' => 'delete/'.$autor['Autor']['id']),array('confirm' => 'Deseja mesmo excluir?','escape' => false));?>
+                 <?php echo $this->Form->postLink($this->Html->image('delete.png',array('alt'=> 'Excluir','title' => 'Excluir', 'height' => '20px', 'width' => '20px')),array('action' => 'delete/'.$autor['Autor']['id']),array('confirm' => 'Deseja mesmo excluir?','escape' => false));?>
             </td>
         </tr>
     <?php endforeach; ?>

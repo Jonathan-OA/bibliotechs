@@ -29,10 +29,6 @@ class LivrosController extends AppController{
     }
     public function edit($id = null) {
         $this->Livro->id = $id;
-        $autores = $this->Livro->Autor->find('list', array('fields' => array('id','nome')));
-        $this->set('autores', $autores);
-        $editoras = $this->Livro->Editora->find('list', array('fields' => array('id','nome')));
-        $this->set('editoras', $editoras);
         if (!$this->Livro->exists()) {
             throw new NotFoundException(__('Livro Inválida'));
         }
@@ -46,7 +42,12 @@ class LivrosController extends AppController{
             }
         }
         else{
-            $this->request->data = $this->Livro->find('first');
+            $this->request->data = $this->Livro->findById($id);
+            $autores = $this->Livro->Autor->find('list', array('fields' => array('id','nome')));
+            $this->set('autores', $autores);
+            $editoras = $this->Livro->Editora->find('list', array('fields' => array('id','nome')));
+            $this->set('editoras', $editoras);
+
         }
     }
 
