@@ -67,32 +67,44 @@ $cakeDescription = __d('cake_dev', 'Bibliotechs');
                   <li class="active"><?php echo $this->Html->image("user.png", array(
     													     "alt" => "Usuarios",
     													     "title" => 'Usuarios',
-    														 "url" => array('controller' => 'Contas', 'action' => '')));?></li>
+    														 "url" => array('controller' => 'Contas', 'action' => '')));?>
+                                 Usuários</li>
                   <li class="divider"></li>
                   <li class="active"><?php echo $this->Html->image("book.png", array(
     													     "alt" => "Livros",
     													     "title" => 'Livros',
-    														 "url" => array('controller' => 'Livros', 'action' => '')));?></li>
+    														 "url" => array('controller' => 'Livros', 'action' => '')));?>
+                                 Livros</li>
                   <li class="divider"></li>
                   <li class="active"><?php echo $this->Html->image("ebook.png", array(
-    													     "alt" => "E-Books",
-    													     "title" => 'E-Books',
-    														 "url" => array('controller' => 'E-Books', 'action' => '')));?></li>
+    													     "alt" => "EBooks",
+    													     "title" => 'EBooks',
+    														 "url" => array('controller' => 'EBooks', 'action' => '')));?>
+                                 E-Books</li>
+                  <li class="divider"></li>
+                   <li class="active"><?php echo $this->Html->image("package.png", array(
+                                   "alt" => "Pacotes",
+                                   "title" => 'Pacotes',
+                                 "url" => array('controller' => 'Pacotes', 'action' => '')));?>
+                                 Pacotes</li>
                   <li class="divider"></li>
                   <li class="active"><?php echo $this->Html->image("editora.png", array(
     													     "alt" => "Editoras",
     													     "title" => 'Editoras',
-    														 "url" => array('controller' => 'Editoras', 'action' => '')));?></li>
+    														 "url" => array('controller' => 'Editoras', 'action' => '')));?>
+                                 Editoras</li>
     			  <li class="divider"></li>
                   <li class="active"><?php echo $this->Html->image("autor.png", array(
     													     "alt" => "Autores",
     													     "title" => 'Autores',
-    														 "url" => array('controller' => 'Autores', 'action' => '')));?></li>
+    														 "url" => array('controller' => 'Autores', 'action' => '')));?>
+                                 Autores</li>
                   <li class="divider"></li>
                   <li class="active"><?php echo $this->Html->image("relatorios.png", array(
     													     "alt" => "Relatorios",
     													     "title" => 'Relatórios',
-    														 "url" => array('controller' => 'Relatorios', 'action' => '')));?></li>
+    														 "url" => array('controller' => 'Relatorios', 'action' => '')));?>
+                                 Relatorios</li>
                   <li class="divider"></li>
               </ul>
           </div>

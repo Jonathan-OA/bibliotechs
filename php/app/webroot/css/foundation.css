@@ -3059,12 +3059,15 @@ ul.pagination {
     margin: 0 0 0 0;
     padding: 0;
     font-size: 0.750rem; }
+    .side-nav li:hover{
+      background: #262721;
+    }
     .side-nav li a:not(.button) {
       display: block;
       color: white;
       margin: 0;
       text-transform: uppercase;
-      padding: 1.80rem 0.875rem ; }
+      padding: 0.95rem 0.4rem ; }
       .side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
         background: #262721;
         color: #EEEEEE; }
