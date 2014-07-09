@@ -80,7 +80,7 @@ $cakeDescription = __d('cake_dev', 'Bibliotechs');
                   <li class="active"><?php echo $this->Html->image("ebook.png", array(
     													     "alt" => "EBooks",
     													     "title" => 'EBooks',
-    														 "url" => array('controller' => 'EBooks', 'action' => '')));?>
+    														 "url" => array('controller' => 'Ebooks', 'action' => '')));?>
                                  E-Books</li>
                   <li class="divider"></li>
                    <li class="active"><?php echo $this->Html->image("package.png", array(
