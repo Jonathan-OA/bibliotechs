@@ -17,7 +17,7 @@
     <?php foreach ($autores as $autor): ?>
         <tr>
             <td><?php echo $autor['Autor']['nome']; ?></td>
-            <td><?php echo $autor['Autor']['data_nascimento']; ?></td>
+            <td><?php echo $this->time->format($autor['Autor']['data_nascimento'], '%d/%m/%Y'); ?></td>
             <td><?php echo $autor['Autor']['cidade']; ?></td>
             <td><?php echo $autor['Autor']['pais']; ?></td>
             <td>

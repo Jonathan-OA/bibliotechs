@@ -26,15 +26,14 @@
                 else echo 'Feminino';
                 ?>
             </td>
-            <td><?php echo  $usuario['Usuario']['data_nascimento'];?></td>
+            <td><?php echo $this->time->format($usuario['Usuario']['data_nascimento'], '%d/%m/%Y');?></td>
             <td><?php echo $usuario['Usuario']['logradouro'].', '.$usuario['Usuario']['numero'].', '.$usuario['Usuario']['bairro'].', '.$usuario['Usuario']['cidade'].', '.$usuario['Usuario']['estado'].', '.$usuario['Usuario']['pais']; ?></td>
             <td><?php echo $usuario['Conta']['email']; ?></td>
-            <td><?php echo $usuario['Conta']['created']; ?></td>
+            <td><?php echo $this->time->format($usuario['Conta']['created'], '%d/%m/%Y'); ?></td>
             <td><?php echo $usuario['Conta']['pont_total']; ?></td>
             <td>
-
              <?php echo $this->Html->link($this->Html->image('edit.png',array('alt'=> 'Editar','title' => 'Editar', 'height' => '20px', 'width' => '20px')),array('action' => 'edit/'.$usuario['Conta']['username']), array('escape' => false));?>
-                <?php echo $this->Form->postLink($this->Html->image('delete.png',array('alt'=> 'Excluir', 'title' => 'Excluir', 'height' => '20px','width' => '20px')),array('action' => 'delete/'.$usuario['Conta']['username']),array('confirm' => 'Deseja mesmo excluir?','escape' => false));?>
+             <?php echo $this->Form->postLink($this->Html->image('delete.png',array('alt'=> 'Excluir', 'title' => 'Excluir', 'height' => '20px','width' => '20px')),array('action' => 'delete/'.$usuario['Conta']['username']),array('confirm' => 'Deseja mesmo excluir?','escape' => false));?>
             </td>
         </tr>
     <?php endforeach; ?>

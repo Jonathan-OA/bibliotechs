@@ -37,7 +37,7 @@ class EditorasController extends AppController{
             }
         }
         else{
-            $this->request->data = $this->Editora->find('first');
+            $this->request->data = $this->Editora->findById($id);
         }
     }
 

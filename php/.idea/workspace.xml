@@ -4,9 +4,13 @@
     <list default="true" id="994b2ad8-f7c6-4201-9204-daa90cdf1974" name="Default" comment="" />
     <ignored path="php.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.ctp" changelist="994b2ad8-f7c6-4201-9204-daa90cdf1974" time="1404876923093" ignored="false" />
+    <file path="/index.ctp" changelist="994b2ad8-f7c6-4201-9204-daa90cdf1974" time="1404932092074" ignored="false" />
     <file path="/LivrosController.php" changelist="994b2ad8-f7c6-4201-9204-daa90cdf1974" time="1404878499369" ignored="false" />
-    <file path="/EbooksController.php" changelist="994b2ad8-f7c6-4201-9204-daa90cdf1974" time="1404879185358" ignored="false" />
+    <file path="/EbooksController.php" changelist="994b2ad8-f7c6-4201-9204-daa90cdf1974" time="1404927931373" ignored="false" />
+    <file path="/ContasController.php" changelist="994b2ad8-f7c6-4201-9204-daa90cdf1974" time="1404931480428" ignored="false" />
+    <file path="/add.ctp" changelist="994b2ad8-f7c6-4201-9204-daa90cdf1974" time="1404929578472" ignored="false" />
+    <file path="/bibliotechs.theme.js" changelist="994b2ad8-f7c6-4201-9204-daa90cdf1974" time="1404926563342" ignored="false" />
+    <file path="/EditorasController.php" changelist="994b2ad8-f7c6-4201-9204-daa90cdf1974" time="1404928551414" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,19 +30,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EbooksController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Controller/EbooksController.php">
+      <file leaf-file-name="add.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/View/Contas/add.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="34" selection-start="514" selection-end="514" vertical-scroll-proportion="0.16917293">
+            <state line="28" column="8" selection-start="1079" selection-end="1258" vertical-scroll-proportion="-11.307693">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/View/Ebooks/add.ctp">
+      <file leaf-file-name="index.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/View/Contas/index.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="46" selection-start="52" selection-end="52" vertical-scroll-proportion="-0.65384614">
+            <state line="31" column="73" selection-start="1341" selection-end="1341" vertical-scroll-proportion="-10.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ctp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/View/Autores/index.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="103" selection-start="606" selection-end="606" vertical-scroll-proportion="0.5240848">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../portalPOD/app/View/Routes/index.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="74" selection-start="2044" selection-end="2056" vertical-scroll-proportion="-14.076923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/View/Contas/edit.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="11" selection-start="673" selection-end="673" vertical-scroll-proportion="-9.807693">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContasController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Controller/ContasController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="35" selection-start="1108" selection-end="1108" vertical-scroll-proportion="-10.269231">
               <folding />
             </state>
           </provider>
@@ -54,11 +94,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/View/Autores/index.ctp" />
         <option value="$PROJECT_DIR$/app/Controller/AutoresController.php" />
         <option value="$PROJECT_DIR$/app/Controller/LivrosController.php" />
-        <option value="$PROJECT_DIR$/app/Controller/EbooksController.php" />
         <option value="$PROJECT_DIR$/app/View/Ebooks/add.ctp" />
+        <option value="$PROJECT_DIR$/app/webroot/js/jquery-ui-1.10.4.custom.js" />
+        <option value="$PROJECT_DIR$/app/View/Layouts/bibliotechs.ctp" />
+        <option value="$PROJECT_DIR$/app/webroot/js/bibliotechs.theme.js" />
+        <option value="$PROJECT_DIR$/app/View/Ebooks/index.ctp" />
+        <option value="$PROJECT_DIR$/app/Controller/EbooksController.php" />
+        <option value="$PROJECT_DIR$/app/View/Pacotes/index.ctp" />
+        <option value="$PROJECT_DIR$/app/Controller/EditorasController.php" />
+        <option value="$PROJECT_DIR$/app/View/Contas/add.ctp" />
+        <option value="$PROJECT_DIR$/app/View/Contas/edit.ctp" />
+        <option value="$PROJECT_DIR$/app/Controller/ContasController.php" />
+        <option value="$PROJECT_DIR$/../../../portalPOD/app/View/Routes/index.ctp" />
+        <option value="$PROJECT_DIR$/app/View/Contas/index.ctp" />
+        <option value="$PROJECT_DIR$/app/View/Autores/index.ctp" />
       </list>
     </option>
   </component>
@@ -162,7 +213,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Ebooks" />
+              <option name="myItemId" value="Contas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Autores" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -191,6 +264,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\adler\bibliotechs\php\app\webroot\js" />
+    </key>
   </component>
   <component name="RunManager">
     <list size="0" />
@@ -288,37 +366,116 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/View/Autores/index.ctp">
+    <entry file="file://$PROJECT_DIR$/app/webroot/js/vendor/modernizr.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="17" selection-start="966" selection-end="966" vertical-scroll-proportion="-15.692307">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/webroot/js/nobel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/AutoresController.php">
+    <entry file="file://$PROJECT_DIR$/app/webroot/js/blacklotus.functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="9" selection-start="1315" selection-end="1315" vertical-scroll-proportion="-15.038462">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/LivrosController.php">
+    <entry file="file://$PROJECT_DIR$/app/webroot/js/blacklotus.theme.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="61" selection-start="1769" selection-end="1769" vertical-scroll-proportion="0.63909775">
+        <state line="70" column="0" selection-start="2187" selection-end="2540" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Ebooks/add.ctp">
+    <entry file="file://$PROJECT_DIR$/app/webroot/js/bibliotechs.theme.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="46" selection-start="52" selection-end="52" vertical-scroll-proportion="-0.65384614">
+        <state line="6" column="6" selection-start="136" selection-end="136" vertical-scroll-proportion="0.1827957">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Layouts/bibliotechs.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="47" selection-start="1803" selection-end="1803" vertical-scroll-proportion="0.4567669">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Ebooks/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="16" selection-start="1354" selection-end="2261" vertical-scroll-proportion="-10.153846">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/EbooksController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="34" selection-start="514" selection-end="514" vertical-scroll-proportion="0.16917293">
+        <state line="78" column="9" selection-start="3480" selection-end="3480" vertical-scroll-proportion="-19.615385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Pacotes/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="275" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.5086705">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/EditorasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="63" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.7669173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/ContasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="35" selection-start="1108" selection-end="1108" vertical-scroll-proportion="-10.269231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Contas/add.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="8" selection-start="1079" selection-end="1258" vertical-scroll-proportion="-11.307693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Contas/edit.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="11" selection-start="673" selection-end="673" vertical-scroll-proportion="-9.807693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../portalPOD/app/View/Routes/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="74" selection-start="2044" selection-end="2056" vertical-scroll-proportion="-14.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Contas/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="73" selection-start="1341" selection-end="1341" vertical-scroll-proportion="-10.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Autores/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="103" selection-start="606" selection-end="606" vertical-scroll-proportion="0.5240848">
           <folding />
         </state>
       </provider>

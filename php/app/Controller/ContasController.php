@@ -22,6 +22,11 @@ class ContasController extends AppController {
 
     public function add() {
         if ($this->request->is('post')) {
+            if($this->request->data['Conta']['confirm_password'] != $this->request->data['Conta']['password']){
+                $this->Session->setFlash('Senha não correspondente à digitada');
+                $this->redirect(array('action' => 'add'));
+            }
+            $this->request->data['Conta']['data_nascimento'] = date("d-m-Y", strtotime($this->request->data['Conta']['data_nascimento']));
             $this->Conta->create();
             if ($this->Conta->saveAll($this->request->data)) {
                 $this->Session->setFlash(__('Parabéns! Agora você faz parte do sistema Bibliotechs!'));

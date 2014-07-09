@@ -9,7 +9,11 @@
         echo $this->Form->input('Conta.email');
         echo $this->Form->input('Usuario.nome');
         echo $this->Form->input('Usuario.sexo');
-        echo $this->Form->input('Usuario.data_nascimento');
+        echo $this->Form->input('Usuario.data_nascimento',array(
+            'dateFormat' => 'DMY',
+            'minYear' => date('Y') - 90,
+            'maxYear' => date('Y')
+        ));
         echo $this->Form->input('Usuario.logradouro');
         echo $this->Form->input('Usuario.numero');
         echo $this->Form->input('Usuario.bairro');

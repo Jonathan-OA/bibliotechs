@@ -16,7 +16,6 @@ class EbooksController extends AppController{
         if ($this->request->is('post')) {
             $this->Ebook->create();
             $file = $this->request->data['Ebook']['file'];
-            Debugger::dump($file);
             if(!$file['name'] == ''){
                 $uploadFolder = WWW_ROOT . 'files';
                 $filename = $file['name'];
@@ -76,7 +75,7 @@ class EbooksController extends AppController{
             }
         }
         else{
-            $this->request->data = $this->Ebook->find('first');
+            $this->request->data = $this->Ebook->findById($id);
         }
     }
 

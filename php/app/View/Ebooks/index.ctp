@@ -29,11 +29,11 @@
             <td><input type="checkbox" name="disponivel" disabled='disabled' <?php if($ebook['Ebook']['disponivel']==1) echo 'checked';?> >
             </td>
             <td>
-                <?php echo $this->Html->link('Editar',array('action' => 'edit/'.$ebook['Ebook']['id']));?>|
-                <?php echo $this->Form->postLink('Excluir',array('action' => 'delete/'.$ebook['Ebook']['id']),array('confirm' => 'Deseja mesmo excluir?'));?>|
+                <?php echo $this->Html->link($this->Html->image('edit.png',array('alt'=> 'Editar','title' => 'Editar', 'height' => '20px', 'width' => '20px')),array('action' => 'edit/'.$ebook['Ebook']['id']), array('escape' => false));?>
+                <?php echo $this->Form->postLink($this->Html->image('delete.png',array('alt'=> 'Excluir', 'title' => 'Excluir', 'height' => '20px','width' => '20px')),array('action' => 'delete/'.$ebook['Ebook']['id']),array('confirm' => 'Deseja mesmo excluir?','escape' => false));?>
                 <?php
-                if($ebook['Ebook']['disponivel'] == 0) echo $this->Html->link('Disp.',array('action' => 'make_available/'.$ebook['Ebook']['id']));
-                if($ebook['Ebook']['disponivel'] == 1) echo $this->Html->link('Indisp.',array('action' => 'make_unavailable/'.$ebook['Ebook']['id']));
+                if($ebook['Ebook']['disponivel'] == 0) echo $this->Html->link($this->Html->image('disp.png',array('alt'=> 'Disponibilizar','title' => 'Disponibilizar', 'height' => '20px', 'width' => '20px')) ,array('action' => 'make_available/'.$ebook['Ebook']['id']), array('escape' => false));
+                if($ebook['Ebook']['disponivel'] == 1) echo $this->Html->link($this->Html->image('indisp.png',array('alt'=> 'Indisponibilizar','title' => 'Indisponibilizar', 'height' => '20px', 'width' => '20px')),array('action' => 'make_unavailable/'.$ebook['Ebook']['id']), array('escape' => false));
                 ?>
             </td>
         </tr>

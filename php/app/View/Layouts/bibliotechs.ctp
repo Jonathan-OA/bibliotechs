@@ -44,6 +44,7 @@ $cakeDescription = __d('cake_dev', 'Bibliotechs');
     echo $this->Html->script('jquery.dataTables'); // Lib para criar tabelas interativas e com filtros
     echo $this->Html->script('foundation.min.js'); // Funções próprias do sistema
     echo $this->Html->script('modernizr'); // Funções próprias do sistema
+    echo $this->Html->script('bibliotechs.theme'); // Funções específicas do Bibliotechs
     echo $this->fetch('script');
     ?>
 
